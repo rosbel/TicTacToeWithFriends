@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="60544RSanroman.EzTicTacToe" Publisher="CN=8C50DC46-4499-40D5-834B-2D78BECA6926" Version="1.0.0.2" />
+  <Properties>
+    <DisplayName>Ez Tic Tac Toe</DisplayName>
+    <PublisherDisplayName>R Sanroman</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="TicTacToeWithFriends.App">
+      <VisualElements DisplayName="Ez Tic Tac Toe" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Ez Tic Tac Toe is a simple tic tac toe player that is ready for whenever you want to quickly play a tic tac toe round with your friends in order to settle a dispute and whatnot." ForegroundText="light" BackgroundColor="#0dc3e6">
+        <DefaultTile ShowName="noLogos" ShortName="TicTacToe" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+          <Rotation Preference="portraitFlipped" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>
